@@ -3,11 +3,8 @@ theme name:		gamelauncher
 version:		1.0
 author:			kelvinator3300
 license:		to ill
-It's free. Completely free. Public Domain. Do whatever you want with it.
-If I owe you some credit for something in this theme, please let me know.
-I think I copied the platform folders from ES-Theme-Spare. I edited some
-of the svg logo files and made pngs of them. ES-Theme-Spare certainly
-was the greatest teacher.
+It's free. Completely free. Public Domain. See Apache License.txt for
+the Roboto font.
 -->
 
 <theme>
@@ -20,7 +17,7 @@ was the greatest teacher.
 			<color>FFFFFF</color>
 			<forceUppercase>true</forceUppercase>
 			<text>${system.name}</text>
-			<fontPath>./slicker.ttf</fontPath>
+			<fontPath>./Roboto-Black.ttf</fontPath>
 			<fontSize>0.036</fontSize>
 		</text>
 
@@ -81,8 +78,8 @@ was the greatest teacher.
 			<color>FFFFFF</color>
 			<forceUppercase>true</forceUppercase>
 			<text>${system.name}</text>
-			<fontPath>./slicker.ttf</fontPath>
-			<fontSize>0.036</fontSize>
+			<fontPath>./Roboto-Black.ttf</fontPath>
+			<fontSize>0.04</fontSize>
 		</text>
 
 		<image name="background_top" extra="true">
@@ -109,8 +106,8 @@ was the greatest teacher.
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.52</pos>
 			<size>1 0.9</size>
-			<fontPath>./slicker.ttf</fontPath>
-			<fontSize>0.03</fontSize>
+			<fontPath>./Roboto-Black.ttf</fontPath>
+			<fontSize>0.036</fontSize>
 		</textlist>
 
 	</view>
@@ -123,8 +120,8 @@ was the greatest teacher.
 			<color>FFFFFF</color>
 			<forceUppercase>true</forceUppercase>
 			<text>${system.name}</text>
-			<fontPath>./slicker.ttf</fontPath>
-			<fontSize>0.036</fontSize>
+			<fontPath>./Roboto-Black.ttf</fontPath>
+			<fontSize>0.04</fontSize>
 		</text>
 
 		<image name="background_top" extra="true">
@@ -151,8 +148,8 @@ was the greatest teacher.
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.52</pos>
 			<size>1 0.9</size>
-			<fontPath>./slicker.ttf</fontPath>
-			<fontSize>0.03</fontSize>
+			<fontPath>./Roboto-Black.ttf</fontPath>
+			<fontSize>0.036</fontSize>
 			<alignment>center</alignment>
 		</textlist>
 
