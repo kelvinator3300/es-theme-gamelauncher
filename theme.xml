@@ -60,7 +60,7 @@ was the greatest teacher.
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
-			<color>00000055</color>
+			<color>00000066</color>
 		</image>
 
 		<helpsystem name="help">
@@ -82,7 +82,7 @@ was the greatest teacher.
 			<forceUppercase>true</forceUppercase>
 			<text>${system.name}</text>
 			<fontPath>./slicker.ttf</fontPath>
-			<fontSize>0.035</fontSize>
+			<fontSize>0.036</fontSize>
 		</text>
 
 		<image name="background_top" extra="true">
@@ -124,7 +124,7 @@ was the greatest teacher.
 			<forceUppercase>true</forceUppercase>
 			<text>${system.name}</text>
 			<fontPath>./slicker.ttf</fontPath>
-			<fontSize>0.035</fontSize>
+			<fontSize>0.036</fontSize>
 		</text>
 
 		<image name="background_top" extra="true">
