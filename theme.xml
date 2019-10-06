@@ -267,8 +267,8 @@ the Roboto font.
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.5</pos>
 			<maxSize>1 1</maxSize>
-			<delay>2</delay>
-			<default></default>
+			<delay>3</delay>
+			<default>true</default>
 			<showSnapshotNoVideo>true</showSnapshotNoVideo>
 			<showSnapshotDelay>true</showSnapshotDelay>
 		</video>
@@ -279,28 +279,32 @@ the Roboto font.
 		<view name="system, basic, detailed, video">
 
 			<carousel name="systemcarousel">
-				<zIndex>100</zIndex>
+				<zIndex>50</zIndex>
 			</carousel>
 
 
 			<textlist name="gamelist">
-				<zIndex>100</zIndex>
+				<zIndex>50</zIndex>
 			</textlist>
 
 			<text name="logoText">
-				<zIndex>100</zIndex>
+				<zIndex>50</zIndex>
 			</text>
 
 			<image name="background" extra="true">
-				<zIndex>99</zIndex>
+				<zIndex>49</zIndex>
 			</image>
 
 			<image name="background_top" extra="true">
-				<zIndex>100</zIndex>
+				<zIndex>50</zIndex>
 			</image>
 
 			<image name="background_bottom" extra="true">
-				<zIndex>100</zIndex>
+				<zIndex>50</zIndex>
+			</image>
+
+			<image name="md_image">
+				<zIndex>0</zIndex>
 			</image>
 
 		</view>
