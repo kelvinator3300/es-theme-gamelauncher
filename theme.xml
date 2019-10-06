@@ -16,20 +16,22 @@ was the greatest teacher.
 
 		<view name="system">
 
-			<text name="logoText">
-				<color>FFFFFF</color>
-				<forceUppercase>true</forceUppercase>
-				<text>${system.name}</text>	
-			</text>
+		<text name="logoText">
+			<color>FFFFFF</color>
+			<forceUppercase>true</forceUppercase>
+			<text>${system.name}</text>
+			<fontPath>./slicker.ttf</fontPath>
+			<fontSize>0.036</fontSize>
+		</text>
 
 			<carousel name="systemcarousel">
 				<type>vertical</type>
 				<color>000000</color>
-				<logoScale>1.4</logoScale>
+				<logoScale>1</logoScale>
 				<maxLogoCount>7</maxLogoCount>
-				<origin>0.5 0</origin>
-				<pos>0.5 0</pos>
-				<size>1 0.95</size>
+				<origin>0.5 0.5</origin>
+				<pos>0.5 0.48</pos>
+				<size>0.9 0.84</size>
 			</carousel>
 
 			<image name="background_bottom" extra="true">
@@ -41,13 +43,12 @@ was the greatest teacher.
 			</image>
 		
 			<text name="systemInfo">
-				<backgroundColor>000000</backgroundColor>
+				<backgroundColor>00000000</backgroundColor>
 				<origin>0 0</origin>
 				<pos>1 1</pos>
 				<color>00000000</color>
-				<fontSize>0.035</fontSize>
 			</text>
-		
+
 		</view>
 	
 	</feature>
@@ -59,7 +60,7 @@ was the greatest teacher.
 			<origin>0 0</origin>
 			<pos>0 0</pos>
 			<size>1 1</size>
-			<color>00000088</color>
+			<color>00000055</color>
 		</image>
 
 		<helpsystem name="help">
@@ -67,7 +68,7 @@ was the greatest teacher.
 			<iconColor>FFFFFF</iconColor>
 			<origin>0.5 1</origin>
 			<pos>0.5 0.998</pos>
-			<fontSize>0.025</fontSize>
+			<fontSize>0.017</fontSize>
 		</helpsystem>
 
 	</view>
@@ -79,13 +80,15 @@ was the greatest teacher.
 			<pos>0.5 0</pos>
 			<color>FFFFFF</color>
 			<forceUppercase>true</forceUppercase>
-			<text>${system.name}</text>	
+			<text>${system.name}</text>
+			<fontPath>./slicker.ttf</fontPath>
+			<fontSize>0.035</fontSize>
 		</text>
 
 		<image name="background_top" extra="true">
 			<path>./bg_color.png</path>
 			<origin>0 0</origin>
-			<pos>0 0.07</pos>
+			<pos>0 0.06</pos>
 			<size>1 0.001</size>
 			<color>FFFFFF</color>
 		</image>
@@ -106,7 +109,8 @@ was the greatest teacher.
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.52</pos>
 			<size>1 0.9</size>
-			<fontSize>0.035</fontSize>
+			<fontPath>./slicker.ttf</fontPath>
+			<fontSize>0.03</fontSize>
 		</textlist>
 
 	</view>
@@ -118,13 +122,15 @@ was the greatest teacher.
 			<pos>0.5 0</pos>
 			<color>FFFFFF</color>
 			<forceUppercase>true</forceUppercase>
-			<text>${system.name}</text>	
+			<text>${system.name}</text>
+			<fontPath>./slicker.ttf</fontPath>
+			<fontSize>0.035</fontSize>
 		</text>
 
 		<image name="background_top" extra="true">
 			<path>./bg_color.png</path>
 			<origin>0 0</origin>
-			<pos>0 0.07</pos>
+			<pos>0 0.06</pos>
 			<size>1 0.001</size>
 			<color>FFFFFF</color>
 		</image>
@@ -145,7 +151,8 @@ was the greatest teacher.
 			<origin>0.5 0.5</origin>
 			<pos>0.5 0.52</pos>
 			<size>1 0.9</size>
-			<fontSize>0.035</fontSize>
+			<fontPath>./slicker.ttf</fontPath>
+			<fontSize>0.03</fontSize>
 			<alignment>center</alignment>
 		</textlist>
 
@@ -273,6 +280,11 @@ was the greatest teacher.
 
 	<feature supported="z-index">
 		<view name="system, basic, detailed, video">
+
+			<carousel name="systemcarousel">
+				<zIndex>100</zIndex>
+			</carousel>
+
 
 			<textlist name="gamelist">
 				<zIndex>100</zIndex>
