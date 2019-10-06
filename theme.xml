@@ -1,0 +1,300 @@
+<!--
+theme name:		gamelauncher
+version:		1.0
+author:			kelvinator3300
+license:		to ill
+It's free. Completely free. Public Domain. Do whatever you want with it.
+If I owe you some credit for something in this theme, please let me know.
+I think I copied the platform folders from ES-Theme-Spare. I edited some
+of the svg logo files and made pngs of them. ES-Theme-Spare certainly
+was the greatest teacher.
+-->
+
+<theme>
+	<formatVersion>4</formatVersion>
+	<feature supported="carousel">
+
+		<view name="system">
+
+			<text name="logoText">
+				<color>FFFFFF</color>
+				<forceUppercase>true</forceUppercase>
+				<text>${system.name}</text>	
+			</text>
+
+			<carousel name="systemcarousel">
+				<type>vertical</type>
+				<color>000000</color>
+				<logoScale>1.4</logoScale>
+				<maxLogoCount>7</maxLogoCount>
+				<origin>0.5 0</origin>
+				<pos>0.5 0</pos>
+				<size>1 0.95</size>
+			</carousel>
+
+			<image name="background_bottom" extra="true">
+				<path>./bg_color.png</path>
+				<origin>0 0</origin>
+				<pos>0 0.97</pos>
+				<size>1 0.001</size>
+				<color>FFFFFF</color>
+			</image>
+		
+			<text name="systemInfo">
+				<backgroundColor>000000</backgroundColor>
+				<origin>0 0</origin>
+				<pos>1 1</pos>
+				<color>00000000</color>
+				<fontSize>0.035</fontSize>
+			</text>
+		
+		</view>
+	
+	</feature>
+
+	<view name="system, basic, detailed, video, grid">
+
+		<image name="background" extra="true">
+			<path>./bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<color>00000088</color>
+		</image>
+
+		<helpsystem name="help">
+			<textColor>FFFFFF</textColor>
+			<iconColor>FFFFFF</iconColor>
+			<origin>0.5 1</origin>
+			<pos>0.5 0.998</pos>
+			<fontSize>0.025</fontSize>
+		</helpsystem>
+
+	</view>
+
+	<view name="basic">
+
+		<text name="logoText">
+			<origin>0.5 0</origin>
+			<pos>0.5 0</pos>
+			<color>FFFFFF</color>
+			<forceUppercase>true</forceUppercase>
+			<text>${system.name}</text>	
+		</text>
+
+		<image name="background_top" extra="true">
+			<path>./bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0 0.07</pos>
+			<size>1 0.001</size>
+			<color>FFFFFF</color>
+		</image>
+
+		<image name="background_bottom" extra="true">
+			<path>./bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0 0.97</pos>
+			<size>1 0.001</size>
+			<color>FFFFFF</color>
+		</image>
+
+		<textlist name="gamelist">
+			<selectorColor>00000000</selectorColor>
+			<selectedColor>FFFF00</selectedColor>
+			<primaryColor>909090</primaryColor>
+			<secondaryColor>FF8800</secondaryColor>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.52</pos>
+			<size>1 0.9</size>
+			<fontSize>0.035</fontSize>
+		</textlist>
+
+	</view>
+
+	<view name="detailed, video">
+
+		<text name="logoText">
+			<origin>0.5 0</origin>
+			<pos>0.5 0</pos>
+			<color>FFFFFF</color>
+			<forceUppercase>true</forceUppercase>
+			<text>${system.name}</text>	
+		</text>
+
+		<image name="background_top" extra="true">
+			<path>./bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0 0.07</pos>
+			<size>1 0.001</size>
+			<color>FFFFFF</color>
+		</image>
+
+		<image name="background_bottom" extra="true">
+			<path>./bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0 0.97</pos>
+			<size>1 0.001</size>
+			<color>FFFFFF</color>
+		</image>
+
+		<textlist name="gamelist">
+			<selectorColor>00000000</selectorColor>
+			<selectedColor>FFFF00</selectedColor>
+			<primaryColor>FFFFFF</primaryColor>
+			<secondaryColor>00FF00</secondaryColor>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.52</pos>
+			<size>1 0.9</size>
+			<fontSize>0.035</fontSize>
+			<alignment>center</alignment>
+		</textlist>
+
+			<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+				<color>90909000</color>
+				<forceUppercase>1</forceUppercase>
+				<fontSize>0.02</fontSize>
+				<size>0.13 0.01</size>
+			</text>
+
+			<text name="md_developer, md_publisher, md_genre, md_players, md_playcount">
+				<color>90909000</color>
+				<forceUppercase>1</forceUppercase>
+				<fontSize>0.02</fontSize>
+				<size>0.13 0.01</size>
+			</text>
+			<datetime name="md_releasedate, md_lastplayed">
+				<color>90909000</color>
+				<forceUppercase>1</forceUppercase>
+				<fontSize>0.02</fontSize>
+				<size>0.13 0.01</size>
+			</datetime>
+
+				<text name="md_lbl_rating">
+					<pos>0.47 0.73</pos>
+				</text>
+				<rating name="md_rating">
+					<color>00000000</color>
+					<pos>0.55 0.725</pos>
+					<size>0.1 0.02</size>
+				</rating>
+
+				<text name="md_lbl_players">
+					<pos>0.47 0.76</pos>
+				</text>
+				<text name="md_players">
+					<pos>0.55 0.76</pos>
+				</text>
+
+				<text name="md_lbl_genre">
+					<pos>0.47 0.79</pos>
+				</text>
+				<text name="md_genre">
+					<pos>0.55 0.79</pos>
+				</text>
+
+				<text name="md_lbl_developer">
+					<pos>0.47 0.82</pos>
+				</text>
+				<text name="md_developer">
+					<pos>0.55 0.82</pos>
+				</text>
+
+				<text name="md_lbl_publisher">
+					<pos>0.47 0.85</pos>
+				</text>
+				<text name="md_publisher">
+					<pos>0.55 0.85</pos>
+				</text>
+
+				<text name="md_lbl_releasedate">
+					<pos>0.47 0.88</pos>
+				</text>
+				<datetime name="md_releasedate">
+					<pos>0.55 0.88</pos>
+				</datetime>
+
+				<text name="md_lbl_playcount">
+					<pos>0.47 0.91</pos>
+				</text>
+				<text name="md_playcount">
+					<pos>0.55 0.91</pos>
+				</text>
+
+				<text name="md_lbl_lastplayed">
+					<pos>0.47 0.94</pos>
+				</text>
+				<datetime name="md_lastplayed">
+					<pos>0.55 0.94</pos>
+				</datetime>
+		
+			<text name="md_description">
+				<pos>0.71 0.73</pos>
+				<size>0.27 0.225</size>
+				<color>90909000</color>
+				<fontSize>0.02</fontSize>
+				<alignment>left</alignment>
+				<forceUppercase>1</forceUppercase>
+				<lineSpacing>1.5</lineSpacing>
+			</text>
+
+	</view>
+
+	<view name="detailed">
+
+		<image name="md_image">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<maxSize>1 1</maxSize>
+		</image>
+
+	</view>
+
+	<feature supported="video">
+	<view name="video">
+
+		<image name="md_marquee">
+			<color>00000000</color>
+			<pos>1 1</pos>
+			<origin>0 0</origin>
+			<maxSize>0 0</maxSize>
+		</image>
+
+ 		<video name="md_video">
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<maxSize>1 1</maxSize>
+			<delay>2</delay>
+			<default></default>
+			<showSnapshotNoVideo>true</showSnapshotNoVideo>
+			<showSnapshotDelay>true</showSnapshotDelay>
+		</video>
+	</view>
+	</feature>
+
+	<feature supported="z-index">
+		<view name="system, basic, detailed, video">
+
+			<textlist name="gamelist">
+				<zIndex>100</zIndex>
+			</textlist>
+
+			<text name="logoText">
+				<zIndex>100</zIndex>
+			</text>
+
+			<image name="background" extra="true">
+				<zIndex>99</zIndex>
+			</image>
+
+			<image name="background_top" extra="true">
+				<zIndex>100</zIndex>
+			</image>
+
+			<image name="background_bottom" extra="true">
+				<zIndex>100</zIndex>
+			</image>
+
+		</view>
+	</feature>
+
+</theme>
