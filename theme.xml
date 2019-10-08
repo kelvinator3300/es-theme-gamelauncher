@@ -4,7 +4,7 @@ version:		1.0
 author:			kelvinator3300
 license:		to ill
 It's free. Completely free. Public Domain. See Apache License.txt for
-the Roboto font.
+the Roboto font. Inspired by Dave Ribin's Game Launcher (www.dribin.org)
 -->
 
 <theme>
@@ -13,32 +13,42 @@ the Roboto font.
 
 		<view name="system">
 
-		<text name="logoText">
-			<color>FFFFFF</color>
-			<forceUppercase>true</forceUppercase>
-			<text>${system.name}</text>
-			<fontPath>./Roboto-Black.ttf</fontPath>
-			<fontSize>0.036</fontSize>
-		</text>
+			<image name="background" extra="true">
+				<path>./background.png</path>
+				<origin>0 0</origin>
+				<pos>0 0</pos>
+				<size>1 1</size>
+				<tile>true</tile>
+			</image>
+
+			<text name="mainMenu" extra="true">
+				<origin>0.5 0</origin>
+				<pos>0.5 0.06</pos>
+				<color>FFFFFF</color>
+				<forceUppercase>true</forceUppercase>
+				<text>Main Menu</text>
+				<fontPath>./Roboto-Black.ttf</fontPath>
+				<fontSize>0.04</fontSize>
+			</text>
+
+			<text name="logoText">
+				<color>FFFFFF</color>
+				<forceUppercase>true</forceUppercase>
+				<text>${system.fullName}</text>
+				<fontPath>./Roboto-Black.ttf</fontPath>
+				<fontSize>0.036</fontSize>
+			</text>
 
 			<carousel name="systemcarousel">
 				<type>vertical</type>
-				<color>000000</color>
+				<color>00000000</color>
 				<logoScale>1</logoScale>
-				<maxLogoCount>7</maxLogoCount>
-				<origin>0.5 0.5</origin>
-				<pos>0.5 0.48</pos>
-				<size>0.9 0.84</size>
+				<maxLogoCount>5</maxLogoCount>
+				<origin>0.5 0</origin>
+				<pos>0.5 0.14</pos>
+				<size>1 0.78</size>
 			</carousel>
 
-			<image name="background_bottom" extra="true">
-				<path>./bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0 0.97</pos>
-				<size>1 0.001</size>
-				<color>FFFFFF</color>
-			</image>
-		
 			<text name="systemInfo">
 				<backgroundColor>00000000</backgroundColor>
 				<origin>0 0</origin>
@@ -52,19 +62,27 @@ the Roboto font.
 
 	<view name="system, basic, detailed, video, grid">
 
-		<image name="background" extra="true">
+		<image name="line" extra="true">
 			<path>./bg_color.png</path>
-			<origin>0 0</origin>
-			<pos>0 0</pos>
+			<origin>0.5 0</origin>
+			<pos>0.5 0.12</pos>
+			<size>0.65 0.002</size>
+			<color>FFFFFF</color>
+		</image>
+
+		<image name="shade" extra="true">
+			<path>./bg_color.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
 			<size>1 1</size>
-			<color>00000066</color>
+			<color>00000088</color>
 		</image>
 
 		<helpsystem name="help">
-			<textColor>FFFFFF</textColor>
-			<iconColor>FFFFFF</iconColor>
-			<origin>0.5 1</origin>
-			<pos>0.5 0.998</pos>
+			<textColor>FFFFFF00</textColor>
+			<iconColor>FFFFFF00</iconColor>
+			<origin>0 0</origin>
+			<pos>1 1</pos>
 			<fontSize>0.017</fontSize>
 		</helpsystem>
 
@@ -74,38 +92,22 @@ the Roboto font.
 
 		<text name="logoText">
 			<origin>0.5 0</origin>
-			<pos>0.5 0</pos>
+			<pos>0.5 0.06</pos>
 			<color>FFFFFF</color>
 			<forceUppercase>true</forceUppercase>
-			<text>${system.name}</text>
+			<text>${system.fullName}</text>
 			<fontPath>./Roboto-Black.ttf</fontPath>
 			<fontSize>0.04</fontSize>
 		</text>
-
-		<image name="background_top" extra="true">
-			<path>./bg_color.png</path>
-			<origin>0 0</origin>
-			<pos>0 0.06</pos>
-			<size>1 0.001</size>
-			<color>FFFFFF</color>
-		</image>
-
-		<image name="background_bottom" extra="true">
-			<path>./bg_color.png</path>
-			<origin>0 0</origin>
-			<pos>0 0.97</pos>
-			<size>1 0.001</size>
-			<color>FFFFFF</color>
-		</image>
 
 		<textlist name="gamelist">
 			<selectorColor>00000000</selectorColor>
 			<selectedColor>FFFF00</selectedColor>
 			<primaryColor>909090</primaryColor>
 			<secondaryColor>FF8800</secondaryColor>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.52</pos>
-			<size>1 0.9</size>
+			<origin>0.5 0</origin>
+			<pos>0.5 0.13</pos>
+			<size>1 0.78</size>
 			<fontPath>./Roboto-Black.ttf</fontPath>
 			<fontSize>0.036</fontSize>
 		</textlist>
@@ -116,38 +118,22 @@ the Roboto font.
 
 		<text name="logoText">
 			<origin>0.5 0</origin>
-			<pos>0.5 0</pos>
+			<pos>0.5 0.06</pos>
 			<color>FFFFFF</color>
 			<forceUppercase>true</forceUppercase>
-			<text>${system.name}</text>
+			<text>${system.fullName}</text>
 			<fontPath>./Roboto-Black.ttf</fontPath>
 			<fontSize>0.04</fontSize>
 		</text>
-
-		<image name="background_top" extra="true">
-			<path>./bg_color.png</path>
-			<origin>0 0</origin>
-			<pos>0 0.06</pos>
-			<size>1 0.001</size>
-			<color>FFFFFF</color>
-		</image>
-
-		<image name="background_bottom" extra="true">
-			<path>./bg_color.png</path>
-			<origin>0 0</origin>
-			<pos>0 0.97</pos>
-			<size>1 0.001</size>
-			<color>FFFFFF</color>
-		</image>
 
 		<textlist name="gamelist">
 			<selectorColor>00000000</selectorColor>
 			<selectedColor>FFFF00</selectedColor>
 			<primaryColor>FFFFFF</primaryColor>
 			<secondaryColor>00FF00</secondaryColor>
-			<origin>0.5 0.5</origin>
-			<pos>0.5 0.52</pos>
-			<size>1 0.9</size>
+			<origin>0.5 0</origin>
+			<pos>0.5 0.13</pos>
+			<size>1 0.78</size>
 			<fontPath>./Roboto-Black.ttf</fontPath>
 			<fontSize>0.036</fontSize>
 			<alignment>center</alignment>
@@ -178,7 +164,7 @@ the Roboto font.
 				</text>
 				<rating name="md_rating">
 					<color>00000000</color>
-					<pos>0.55 0.725</pos>
+					<pos>1 1</pos>
 					<size>0.1 0.02</size>
 				</rating>
 
@@ -282,7 +268,6 @@ the Roboto font.
 				<zIndex>50</zIndex>
 			</carousel>
 
-
 			<textlist name="gamelist">
 				<zIndex>50</zIndex>
 			</textlist>
@@ -291,11 +276,15 @@ the Roboto font.
 				<zIndex>50</zIndex>
 			</text>
 
-			<image name="background" extra="true">
+			<text name="mainMenu" extra="true">
+				<zIndex>50</zIndex>
+			</text>
+
+			<image name="shade" extra="true">
 				<zIndex>49</zIndex>
 			</image>
 
-			<image name="background_top" extra="true">
+			<image name="line" extra="true">
 				<zIndex>50</zIndex>
 			</image>
 
@@ -304,6 +293,10 @@ the Roboto font.
 			</image>
 
 			<image name="md_image">
+				<zIndex>1</zIndex>
+			</image>
+
+			<image name="background" extra="true">
 				<zIndex>0</zIndex>
 			</image>
 
