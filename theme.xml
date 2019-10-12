@@ -22,13 +22,16 @@ the Roboto font. Inspired by Dave Ribin's Game Launcher (www.dribin.org)
 			</image>
 
 			<text name="mainMenu" extra="true">
-				<origin>0.5 0</origin>
-				<pos>0.5 0.06</pos>
+				<origin>0.5 1</origin>
+				<pos>0.5 0.12</pos>
 				<color>FFFFFF</color>
 				<forceUppercase>true</forceUppercase>
 				<text>Main Menu</text>
 				<fontPath>./Roboto-Black.ttf</fontPath>
 				<fontSize>0.04</fontSize>
+				<size>0.4 0.1</size>
+				<alignment>center</alignment>
+				<lineSpacing>1</lineSpacing>
 			</text>
 
 			<text name="logoText">
@@ -42,8 +45,9 @@ the Roboto font. Inspired by Dave Ribin's Game Launcher (www.dribin.org)
 			<carousel name="systemcarousel">
 				<type>vertical</type>
 				<color>00000000</color>
+				<logoSize>1 0.2</logoSize>
 				<logoScale>1</logoScale>
-				<maxLogoCount>5</maxLogoCount>
+				<maxLogoCount>9</maxLogoCount>
 				<origin>0.5 0</origin>
 				<pos>0.5 0.14</pos>
 				<size>1 0.78</size>
@@ -66,7 +70,7 @@ the Roboto font. Inspired by Dave Ribin's Game Launcher (www.dribin.org)
 			<path>./bg_color.png</path>
 			<origin>0.5 0</origin>
 			<pos>0.5 0.12</pos>
-			<size>0.65 0.002</size>
+			<size>0.45 0.002</size>
 			<color>FFFFFF</color>
 		</image>
 
@@ -91,13 +95,16 @@ the Roboto font. Inspired by Dave Ribin's Game Launcher (www.dribin.org)
 	<view name="basic">
 
 		<text name="logoText">
-			<origin>0.5 0</origin>
+			<origin>0.5 0.5</origin>
 			<pos>0.5 0.06</pos>
 			<color>FFFFFF</color>
 			<forceUppercase>true</forceUppercase>
 			<text>${system.fullName}</text>
 			<fontPath>./Roboto-Black.ttf</fontPath>
 			<fontSize>0.04</fontSize>
+			<size>0.1 0.4</size>
+			<lineSpacing>1</lineSpacing>
+			<alignment>center</alignment>
 		</text>
 
 		<textlist name="gamelist">
@@ -110,6 +117,7 @@ the Roboto font. Inspired by Dave Ribin's Game Launcher (www.dribin.org)
 			<size>1 0.78</size>
 			<fontPath>./Roboto-Black.ttf</fontPath>
 			<fontSize>0.036</fontSize>
+			<forceUppercase>true</forceUppercase>
 		</textlist>
 
 	</view>
@@ -117,13 +125,16 @@ the Roboto font. Inspired by Dave Ribin's Game Launcher (www.dribin.org)
 	<view name="detailed, video">
 
 		<text name="logoText">
-			<origin>0.5 0</origin>
-			<pos>0.5 0.06</pos>
+			<origin>0.5 1</origin>
+			<pos>0.5 0.12</pos>
 			<color>FFFFFF</color>
 			<forceUppercase>true</forceUppercase>
 			<text>${system.fullName}</text>
 			<fontPath>./Roboto-Black.ttf</fontPath>
 			<fontSize>0.04</fontSize>
+			<size>0.4 0.1</size>
+			<lineSpacing>1</lineSpacing>
+			<alignment>center</alignment>
 		</text>
 
 		<textlist name="gamelist">
@@ -136,6 +147,7 @@ the Roboto font. Inspired by Dave Ribin's Game Launcher (www.dribin.org)
 			<size>1 0.78</size>
 			<fontPath>./Roboto-Black.ttf</fontPath>
 			<fontSize>0.036</fontSize>
+			<forceUppercase>true</forceUppercase>
 			<alignment>center</alignment>
 		</textlist>
 
